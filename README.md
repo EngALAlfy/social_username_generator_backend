@@ -42,9 +42,9 @@ This is the backend of the Social Username Generator project. It consists of a w
 
 1. Clone the repository:
 
-``bash
+```bash
 git clone https://github.com/username/social_username_generator_backend.git
-``
+```
 
 2. Set up the environment configuration:
 
@@ -52,9 +52,9 @@ git clone https://github.com/username/social_username_generator_backend.git
 
 3. Install dependencies:
 
-``bash
+```bash
 composer install
-``
+```
 
 4. Set up the database:
 
@@ -68,9 +68,9 @@ php core/migrate.php
 
 5. Seed the database with initial data:
 
-``bash
+```bash
 php core/seed.php
-``
+```
 
 6. Start the server:
 
