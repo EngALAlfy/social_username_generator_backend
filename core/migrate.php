@@ -1,6 +1,19 @@
 <?php
-
+require_once __DIR__ . '/../bootstrap.php';
 require_once __DIR__ . '/connect.php';
+
+/// Users
+$sql = "DROP TABLE IF EXISTS users";
+$pdo->exec($sql);
+$sql = "CREATE TABLE users (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(255) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL
+)";
+
+// Use exec() because no results are returned
+$pdo->exec($sql);
+echo "Table 'users' created successfully</br>";
 
 /// Settings
 $sql = "DROP TABLE IF EXISTS settings";
