@@ -3,20 +3,20 @@ require_once __DIR__ . '/../bootstrap.php';
 require_once __DIR__ . '/connect.php';
 
 // Users
-// $sql = "INSERT INTO users (username, password) VALUES (:username, :password)";
+ $sql = "INSERT INTO users (username, password) VALUES (:username, :password)";
 
-// $newUsername = 'admin';
-// $newPassword = password_hash('123456', PASSWORD_DEFAULT);
+ $newUsername = 'admin';
+ $newPassword = password_hash('123456', PASSWORD_DEFAULT);
 
-// $stmt = $pdo->prepare($sql);
-// $stmt->bindParam(':username', $newUsername, PDO::PARAM_STR);
-// $stmt->bindParam(':password', $newPassword, PDO::PARAM_STR);
+ $stmt = $pdo->prepare($sql);
+ $stmt->bindParam(':username', $newUsername, PDO::PARAM_STR);
+ $stmt->bindParam(':password', $newPassword, PDO::PARAM_STR);
 
-// if ($stmt->execute()) {
-//     echo "New user inserted successfully</br>";
-// } else {
-//     echo "Error inserting user: " . $stmt->errorInfo()[2];
-// }
+ if ($stmt->execute()) {
+     echo "New user inserted successfully</br>";
+ } else {
+     echo "Error inserting user: " . $stmt->errorInfo()[2];
+ }
 
 /// Settings
 $sql = "INSERT INTO settings (`key`, `value`) VALUES (:key, :value)";
