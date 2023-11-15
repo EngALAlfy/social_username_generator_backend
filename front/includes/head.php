@@ -1,7 +1,32 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>تخمين يوزرات انستا، تيك توك</title>
-	<style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./front/js/jquery.toast.min.js"></script>
+
+    <link href="./front/css/jquery.toast.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <style>
+        .alert-danger{
+            -webkit-text-size-adjust: 100%;
+            -webkit-tap-highlight-color: transparent;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            text-align: left;
+            box-sizing: border-box;
+            position: relative;
+            padding: .75rem 1.25rem;
+            margin-bottom: 1rem;
+            border: 1px solid transparent;
+            border-radius: .25rem;
+            color: #721c24;
+            background-color: #f8d7da;
+            border-color: #f5c6cb;
+            margin-top: 1rem;
+        }
+
 		a.cta_button {
 			-moz-box-sizing: content-box !important;
 			-webkit-box-sizing: content-box !important;

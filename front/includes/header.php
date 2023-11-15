@@ -10,9 +10,10 @@
 						<div id="hs_cos_wrapper_dnd_area-module-4"
 							class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rich_text widget-type-rich_text"
 							style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
-							<span id="hs_cos_wrapper_dnd_area-module-4_"
-								class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style=""
-								data-hs-cos-general-type="widget" data-hs-cos-type="rich_text">
+
+                            <form action="./generate-result.php" method="post" id="hs_cos_wrapper_dnd_area-module-4_"
+                                      class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style=""
+                                      data-hs-cos-general-type="widget" data-hs-cos-type="rich_text">
 								<h1 class="font30" style="
 									color: #00ff5a;
 									text-align: center;
@@ -20,9 +21,15 @@
 								  ">
 									<span style="color: #ffffff">تخمين يوزرات انستا، تيك توك</span>
 								</h1>
+
+                                <?php if(isset($_GET["error"])){ ?>
+                                    <div class="alert-danger" style="text-align: right" role="alert">
+                                        خطأ : <?php echo $_GET["error"]; ?>
+                                    </div>
+                                <?php } ?>
 								<div style="text-align: center">
-									<input id="password-box" class="null hsimp-level password-output" type="text"
-										placeholder="ادخل كلمة مخصصة لليوزر" />
+									<input name="custom_word" id="password-box" class="null hsimp-level password-output" type="text"
+                                           placeholder="ادخل كلمة مخصصة لليوزر" />
 									<br /><br /><button id="generate-button" class="generate-button uppercase">
 										تخمين اليوزر
 									</button>
@@ -35,14 +42,14 @@
 												طول اليوزر
 											</div>
 											<div class="generate-setting-span fieldval" style="float:none;">
-												<select id="password-length-selection">
+												<select name="length" id="password-length-selection">
 													&nbsp;
 													<option value="3">3</option>
 													<option value="4">4</option>
 													<option value="5">5</option>
 													<option value="6">6</option>
 													<option value="7">7</option>
-													<option value="8">8</option>
+													<option selected value="8">8</option>
 													<option value="9">9</option>
 													<option value="10">10</option>
 												</select>
@@ -53,7 +60,7 @@
 												المنصة
 											</div>
 											<div class="generate-setting-span fieldval" style="float:none;">
-												<select id="service-selection">
+												<select name="service" id="service-selection">
 													<option value="facebook">facebook</option>
 													<option value="snapchat">snapchat</option>
 													<option value="instagram">instagram</option>
@@ -68,7 +75,7 @@
 												رموز مخصصة
 											</div>
 											<div class="generate-setting-span fieldval"  style="float:none;">
-												<input id="include-symbol-checkbox" type="checkbox" checked="checked" />
+												<input name="symbols" id="include-symbol-checkbox" type="checkbox" checked="checked" />
 											</div>
 										</div>
 										<div style="display:flex;">
@@ -76,8 +83,8 @@
 												تضمين الارقام (0-9)
 											</div>
 											<div class="generate-setting-span fieldval" style="float:none;">
-												<input id="include-numbers-checkbox" type="checkbox"
-													checked="checked" />
+												<input name="numbers" id="include-numbers-checkbox" type="checkbox"
+                                                       checked="checked" />
 											</div>
 										</div>
 									</fieldset>
@@ -90,7 +97,7 @@
 									<span style="color: #ffffff">لا تنسي استخدام الاعدادات لتخصيص اسم المستخدم الخاص
 										بك</span>
 								</p>
-							</span>
+							</form>
 						</div>
 					</div>
 					<!--end widget-span -->

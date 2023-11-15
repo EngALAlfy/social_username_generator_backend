@@ -724,7 +724,6 @@ form legend {
 
 /* Form inputs */
 
-form input[type=text],
 form input[type=email],
 form input[type=password],
 form input[type=tel],
@@ -844,7 +843,7 @@ right: 0;
       margin-bottom: .7rem;
   }
   
-  form input[type="text"], form input[type="email"], form input[type="password"], form input[type="tel"], form input[type="number"], form input[type="file"], form select, form textarea {
+  form input[type="email"], form input[type="password"], form input[type="tel"], form input[type="number"], form input[type="file"], form select, form textarea {
       font-size: .875rem;
       padding: .3rem;
   }
