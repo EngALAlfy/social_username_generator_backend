@@ -19,7 +19,7 @@
 									text-align: center;
 									font-weight: normal;
 								  ">
-                                    <span style="color: #ffffff">تخمين يوزرات انستا، تيك توك</span>
+                                    <span style="color: #ffffff">المربح: أداة تخمين يوزرات انستا، تيك توك، تويتر</span>
                                 </h1>
                                 <div style="text-align: center">
                                     <a href="./index.php" id="generate-button" class="generate-button uppercase">
