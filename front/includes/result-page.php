@@ -12,10 +12,7 @@
                     <div class="span12 widget-span widget-type-cell" style="" data-widget-type="cell" data-x="0"
                          data-w="12">
                         <?php include './front/includes/result-header.php'; ?>
-                        <?php include './front/includes/row_1.php'; ?>
-                        <?php include './front/includes/row_2.php'; ?>
                         <?php include './front/includes/row_3.php'; ?>
-                        <?php include './front/includes/row_4.php'; ?>
                     </div>
                     <!--end widget-span -->
                 </div>

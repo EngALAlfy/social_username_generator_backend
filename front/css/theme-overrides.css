@@ -569,14 +569,15 @@ html {
 }
 
 body {
-  font-family: Manrope, sans-serif; font-style: normal; font-weight: normal; text-decoration: none;
+   /* font-family: Manrope, sans-serif; */
+   font-style: normal; font-weight: normal; text-decoration: none; 
   color: #54565a;
 }
 
 /* Paragraphs */
 
 p {
-  font-family: Manrope, sans-serif; font-style: normal; font-weight: normal; text-decoration: none;
+   font-style: normal; font-weight: normal; text-decoration: none;
 }
 
 /* Anchors */
@@ -597,42 +598,42 @@ a:active {
 /* Headings */
 
 h1 {
-  font-weight: 700; text-decoration: none; font-family: Manrope, sans-serif; font-style: normal;
+  font-weight: 700; text-decoration: none; font-style: normal;
   color: #54565a;
   font-size: 50px;
   font-weight:400;
 }
 
 h2 {
-  font-family: Manrope, sans-serif; font-style: normal; font-weight: normal; text-decoration: none;
+   font-style: normal; font-weight: normal; text-decoration: none;
   color: #54565a;
   font-size: 38px;
   font-weight:400;
 }
 
 h3 {
-  font-weight: 700; text-decoration: none; font-family: Manrope, sans-serif; font-style: normal;
+  font-weight: 700; text-decoration: none; font-style: normal;
   color: #54565a;
   font-size: 24px;
   font-weight:400;
 }
 
 h4 {
-  font-weight: normal; text-decoration: none; font-family: Manrope, sans-serif; font-style: normal;
+  font-weight: normal; text-decoration: none;  font-style: normal;
   color: #54565a;
   font-size: 24px;
   font-weight:400;
 }
 
 h5 {
-  font-weight: normal; text-decoration: none; font-family: Manrope, sans-serif; font-style: normal;
+  font-weight: normal; text-decoration: none;  font-style: normal;
   color: #54565a;
   font-size: 16px;
   font-weight:400;
 }
 
 h6 {
-  font-weight: normal; text-decoration: none; font-family: Manrope, sans-serif; font-style: normal;
+  font-weight: normal; text-decoration: none; font-style: normal;
   color: #54565a;
   font-size: 14px;
   font-weight:400;
@@ -690,7 +691,7 @@ button:active,
 
 form,
 .submitted-message {
-  font-family: Manrope, sans-serif; font-style: normal; font-weight: normal; text-decoration: none;
+ font-style: normal; font-weight: normal; text-decoration: none;
 }
 
 /* Form title */
@@ -944,7 +945,6 @@ body .navigation-primary a,
 .header__language-switcher-label-current,
 .header__language-switcher .lang_list_class li a {
   color: #FFFFFF;
-  font-family: Manrope, sans-serif;
 }
 
 body .navigation-primary a:hover,
@@ -1024,7 +1024,6 @@ body .submenu.level-2 > li:first-child.focus:before {
 
 .header__language-switcher-label-current,
 .header__language-switcher .lang_list_class li a {
-  font-family: Manrope, sans-serif;
 }
 
 .header__language-switcher-label-current:after {

@@ -1,31 +1,75 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>تخمين يوزرات انستا، تيك توك</title>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="./front/js/jquery.toast.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script src="./front/js/jquery.toast.min.js"></script>
 
-    <link href="./front/css/jquery.toast.min.css" rel="stylesheet">
+	<link href="./front/css/jquery.toast.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-    <style>
-        .alert-danger{
-            -webkit-text-size-adjust: 100%;
-            -webkit-tap-highlight-color: transparent;
-            font-size: 1rem;
-            font-weight: 400;
-            line-height: 1.5;
-            text-align: left;
-            box-sizing: border-box;
-            position: relative;
-            padding: .75rem 1.25rem;
-            margin-bottom: 1rem;
-            border: 1px solid transparent;
-            border-radius: .25rem;
-            color: #721c24;
-            background-color: #f8d7da;
-            border-color: #f5c6cb;
-            margin-top: 1rem;
-        }
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+	<!-- Select2 CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-beta.1/css/select2.min.css" />
+
+	<!-- Bootstrap Switch CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.4/css/bootstrap3/bootstrap-switch.min.css">
+
+	<!-- Bootstrap Switch JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.4/js/bootstrap-switch.min.js"></script>
+
+	<!-- Select2 JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-beta.1/js/select2.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+	<!-- Include Cairo font -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap">
+
+	<style>
+		body {
+			font-family: 'Cairo', sans-serif!important;
+		}
+	</style>
+
+	<style>
+		/* Adjust the height of the switch */
+		.bootstrap-switch-container {
+			height: 24px !important;
+		}
+
+		/* Style for the legend */
+		.generate-settings-fieldset legend {
+			font-size: 20px;
+			color: #fff;
+			/* Light color */
+		}
+
+		.select2-container {
+			width: 132px !important;
+		}
+	</style>
+
+
+	<style>
+		.alert-danger {
+			-webkit-text-size-adjust: 100%;
+			-webkit-tap-highlight-color: transparent;
+			font-size: 1rem;
+			font-weight: 400;
+			line-height: 1.5;
+			text-align: left;
+			box-sizing: border-box;
+			position: relative;
+			padding: .75rem 1.25rem;
+			margin-bottom: 1rem;
+			border: 1px solid transparent;
+			border-radius: .25rem;
+			color: #721c24;
+			background-color: #f8d7da;
+			border-color: #f5c6cb;
+			margin-top: 1rem;
+		}
 
 		a.cta_button {
 			-moz-box-sizing: content-box !important;
@@ -338,7 +382,7 @@
 			margin-bottom: 12px !important;
 		}
 	</style>
-	
+
 	<style>
 		@font-face {
 			font-family: "Manrope";
@@ -367,7 +411,6 @@
 		}
 
 		.password-output {
-			font-family: sans-serif;
 			font-size: 24px;
 			font-weight: 300;
 			color: black;
@@ -378,7 +421,6 @@
 		}
 
 		.specific-character-input {
-			font-family: sans-serif;
 			font-size: 12px;
 			font-weight: 300;
 			color: black;
@@ -400,7 +442,7 @@
 
 		.generate-setting-span {
 			display: inline-block !important;
-			width: 100%!important;
+			width: 100% !important;
 			font-size: 16px;
 		}
 
@@ -408,10 +450,13 @@
 			width: 250px !important;
 		}
 
+		.span12.widget-span.widget-type-custom_widget.dnd-module{
+			overflow-x: hidden;
+		}
 		.generate-button {
 			margin: auto;
 			display: block;
-			width: 375px;
+            width: 40%;
 			background: #00ffd1;
 			border-bottom: #00ffd2 3px solid;
 			border-left: #00ffd2 1px solid;
@@ -467,7 +512,6 @@
 		}
 
 		/*.panel_checker input {
-    font-family: sans-serif;
     font-size: 24px;
     font-weight: 300;
     color: #888;
