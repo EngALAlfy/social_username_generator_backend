@@ -24,7 +24,20 @@
     <script>
     // Initialize Select2
     $(document).ready(function() {
-        $('.js-example-basic-single').select2();
+        $('.js-example-basic-single').select2({
+            templateSelection: function (data, container) {
+                if (data.element && data.element.dataset.icon) {
+                    return $('<span><i style="color:'+data.element.dataset.color+';" class="' + data.element.dataset.icon + '"></i> ' + data.text + '</span>');
+                }
+                return data.text;
+            },
+            templateResult: function (data, container) {
+                if (data.element && data.element.dataset.icon) {
+                    return $('<span><i style="color:'+data.element.dataset.color+';" class="' + data.element.dataset.icon + '"></i> ' + data.text + '</span>');
+                }
+                return data.text;
+            }
+        });
     });
 
     // Initialize Bootstrap Switch

@@ -4,7 +4,10 @@
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 	<script src="./front/js/jquery.toast.min.js"></script>
 
-	<link href="./front/css/jquery.toast.min.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./favicon.png">
+
+    <link href="./front/css/jquery.toast.min.css" rel="stylesheet">
 
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
@@ -32,8 +35,15 @@
 		}
 	</style>
 
+
 	<style>
-		/* Adjust the height of the switch */
+
+        .select2-results__options {
+            max-height: none !important;
+            overflow-y: hidden !important;
+        }
+
+        /* Adjust the height of the switch */
 		.bootstrap-switch-container {
 			height: 24px !important;
 		}
