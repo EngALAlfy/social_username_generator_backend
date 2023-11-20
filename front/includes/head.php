@@ -1,6 +1,6 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>تخمين يوزرات انستا، تيك توك</title>
+	<title>المربح: أداة تخمين يوزرات انستا، تيك توك، تويتر</title>
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 	<script src="./front/js/jquery.toast.min.js"></script>
 
@@ -41,6 +41,11 @@
         .select2-results__options {
             max-height: none !important;
             overflow-y: hidden !important;
+        }
+
+        p , div {
+            line-height: 33px;
+            word-spacing: 1.5px;
         }
 
         /* Adjust the height of the switch */
