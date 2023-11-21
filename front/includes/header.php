@@ -61,7 +61,7 @@
                                                     <option value="5" data-icon="fas fa-trophy">5 (خماسي)</option>
                                                     <option value="6" data-icon="fas fa-crown">6 (سداسي)</option>
                                                     <option value="7" data-icon="fas fa-heart">7 (سبعاعي)</option>
-                                                    <option value="8" data-icon="fas fa-gem">8 (ثماني)</option>
+                                                    <option value="8" selected data-icon="fas fa-gem">8 (ثماني)</option>
                                                     <option value="9" data-icon="fas fa-coffee">9 (تسعي)</option>
                                                     <option value="10" data-icon="fas fa-star">10 (عشري)</option>
                                                 </select>

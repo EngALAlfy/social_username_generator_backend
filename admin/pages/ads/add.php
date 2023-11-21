@@ -31,7 +31,7 @@ check_user();
             require_once __DIR__ . '/../../includes/sidebar.php';
             ?>
 
-            <div class="col"  style="margin-left:20%;margin-top:50px;">
+            <div class="col"  style="margin-left:20%;margin-top:70px;">
 
                 <?php
                 // ads list view code

@@ -23,6 +23,7 @@
         position: fixed;
         left: 0;
         z-index: 1;
+        margin-top: 60px;
     }
 
     .sidebar .nav {
@@ -62,6 +63,11 @@
         </div>
         <ul class="nav flex-column">
             <li class="dropdown-divider"></li>
+            <li class="nav-item">
+                <a class="nav-link <?php echo str_contains($_SERVER['REQUEST_URI'], "/admin/pages/post/index.php") ? 'active' : '' ?>" href="/admin/pages/post/index.php">
+                    <span class="fa fa-portrait mr-2"></span> Page Post
+                </a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link <?php echo str_contains($_SERVER['REQUEST_URI'], "/admin/pages/ads/index.php") ? 'active' : '' ?>" href="/admin/pages/ads/index.php">
                     <span class="fa fa-list mr-2"></span> Ads List
